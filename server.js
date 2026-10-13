@@ -49,6 +49,7 @@ app.get("/api/videos", async (req, res) => {
     url.search = new URLSearchParams({
       part: "snippet",
       type: "video",
+      videoEmbeddable: "true",
       maxResults: "10",
       q: query,
       key: API_KEY
